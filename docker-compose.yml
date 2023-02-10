@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    container_name: springboot_container_db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: springboot_db
+    volumes:
+      - db_volumes:/var/lib/mysql
+    ports:
+      - 3340:3306
+  phpmyadmin_springboot:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8084:80
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT=3306
+      - PMA_USER=root
+      - PMA_PASSWORD=admin
+    depends_on:
+      - db
+volumes:
+  db_volumes:
+    driver: local
