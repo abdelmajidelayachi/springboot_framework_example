@@ -1,6 +1,6 @@
 # Spring Boot Example with Spring Security, Docker, Data JPA, and Exception Handling
 
-[![Build Status](https://travis-ci.org/{username}/{repo}.svg?branch=master)](https://travis-ci.org/{username}/{repo})
+[![Build Status](https://travis-ci.org/{abdelmajidelayachi}/{repo}.svg?branch=master)](https://travis-ci.org/{abdelmajidelayachi}/{repo})
 
 This project is an example of a Spring Boot application that demonstrates the use of Spring Security, Docker, Data JPA, and handling exceptions.
 
@@ -70,7 +70,7 @@ Please feel free to contribute to this project by creating a pull request or by 
 
 ## License
 
-This project is licensed under the [{license name}](LICENSE) license.
+This project is open for editing and usage.
 
 ## Acknowledgements
 - [Spring Boot](https://spring.io/projects/spring-boot)
